@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Micro scene</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/swiper-3.4.1.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="js/zepto.min.js"></script>
+    <script src="js/swiper-3.4.1.jquery.min.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <style>
+        *{margin: 0;padding: 0;list-style: none;border: 0;}
+        html,body,.swiper-container,.swiper-wrapper,.swiper-slide{
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide img{
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+        }
+        /*
+        * page 1
+        */
+        .p1{
+            background: #263646;
+        }
+        .p1 img:nth-child(1){
+            width:100%;
+            margin-left:-50%;
+            margin-top:-25%;
+        }
+        .p1 img:nth-child(2){
+            width:50%;
+            margin-left:-10%;
+            margin-top:-30%;
+        }
+        .p1 img:nth-child(3){
+            width:15%;
+            margin-left:-30%;
+            margin-top:-30%;
+        }
+        .p1 img:nth-child(4){
+            width:78%;
+            margin-left:-35%;
+            margin-top:-5%;
+        }
+        /*
+        * page 2
+        */
+        .p2{
+            background: #3fb5fa;
+        }
+        .p2 img:nth-child(1){
+            width: 84%;
+            margin-top:-70%;
+            margin-left:-42%;
+        }
+        .p2 img:nth-child(2){
+            width: 60%;
+            margin-top:-50%;
+            margin-left:-30%;
+        }
+        .p2 img:nth-child(3){
+            width: 100%;
+            margin-top:-26%;
+            margin-left:-50%;
+        }
+        /*
+        * page 3
+        */
+        .p3{
+            background: #3fb5fa;
+        }
+        .p3 img:nth-child(1){
+            width: 50%;
+            margin-top:-70%;
+            margin-left:-24%;
+        }
+        .p3 img:nth-child(2){
+            width: 105%;
+            margin-top:-46%;
+            margin-left:-50%;
+        }
+        .p3 img:nth-child(3){
+            width: 30%;
+            margin-top:30%;
+            margin-left:5%;
+            animation: handAutoPlay 2s infinite ease-in-out;
+            opacity: 0;
+        }
+        @keyframes handAutoPlay{
+            0%{transform: rotate(-25deg);transform-origin:right bottom;opacity:0}
+            50%{transform: rotate(25deg);transform-origin:right bottom;opacity:1}
+            100%{transform: rotate(-25deg);transform-origin:right bottom;opacity:0}
+        }
+        /*
+        * page 4
+        */
+        .p4{
+            background: #3fb5fa;
+        }
+        .p4 img:nth-child(1){
+            width: 50%;
+            margin-top:-70%;
+            margin-left:-24%;
+        }
+        .p4 img:nth-child(3){
+            width: 60%;
+            margin-top:-50%;
+            margin-left:-30%;
+        }
+        .p4 img:nth-child(2){
+            width: 100%;
+            margin-top:-26%;
+            margin-left:-50%;
+        }
+        /*
+        * page 5
+        */
+        .p5{
+            background: #3fb5fa;
+        }
+        .p5 img:nth-child(1){
+            width: 50%;
+            margin-top:-70%;
+            margin-left:-24%;
+        }
+        .p5 img:nth-child(2){
+            width: 60%;
+            margin-top:-50%;
+            margin-left:-30%;
+        }
+        .p5 img:nth-child(3){
+            width: 15%;
+            margin-top:-22%;
+            margin-left:-20%;
+        }
+        .p5 img:nth-child(4){
+            width: 10%;
+            margin-top:-18%;
+            margin-left:-6%;
+        }
+        .p5 img:nth-child(5){
+            width: 35%;
+            margin-top:-4%;
+            margin-left:-16%;
+        }
+        .p5 img:nth-child(6){
+            width: 30%;
+            margin-top:-35%;
+            margin-left:15%;
+        }
+        .p5 img:nth-child(7){
+            width: 15%;
+            margin-top:-50%;
+            margin-left:30%;
+        }
+        /*
+        * page 6
+        */
+        .p6{
+            background: #fff;
+        }
+        .p6 img:nth-child(1){
+            width: 60%;
+            margin-top:-70%;
+            margin-left:-32%;
+        }
+        .p6 img:nth-child(2){
+            width: 80%;
+            margin-top:-50%;
+            margin-left:-36%;
+        }
+        .p6 img:nth-child(3){
+            width: 70%;
+            margin-top:5%;
+            margin-left:-38%;
+        }
+    </style>
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide p1">
+            <img src="./images/g1_bg.png" alt="" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1.5s" swiper-animate-delay="0.3s">
+            <img src="./images/g1_title.png" alt="" class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.8s" swiper-animate-delay="0">
+            <img src="./images/g1_logo.png" alt="" class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.8s" swiper-animate-delay="0">
+            <img src="./images/g1_text.png" alt="" class="ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="0.8s" swiper-animate-delay="0">
+
+        </div>
+        <div class="swiper-slide p2">
+            <img src="./images/g2_title.png" alt="" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.2s">
+            <img src="./images/g2_phone.png" alt="" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.4s">
+            <img src="./images/g2_people.png" alt="" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.4s">
+
+        </div>
+        <div class="swiper-slide p3">
+            <img src="./images/g3_title.png" alt="" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0">
+            <img src="./images/g3_phone.png" alt="" class="ani" swiper-animate-effect="zoomInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.2s">
+            <img src="./images/g3_hand.png" alt="" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="4s">
+
+        </div>
+        <div class="swiper-slide p4">
+            <img src="./images/g4_title.png" alt="" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0">
+            <img src="./images/g4_center.png" alt="" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.4s">
+            <img src="./images/g4_phone.png" alt="" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.4s">
+        </div>
+        <div class="swiper-slide p5">
+            <img src="./images/g5_title.png" alt="" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0">
+            <img src="./images/g5_phone.png" alt="" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.1s">
+            <img src="./images/g5_feiyong.png" alt="" class="ani" swiper-animate-effect="shake" swiper-animate-duration="1s" swiper-animate-delay="0.6s">
+            <img src="./images/g5_no.png" alt="" class="ani" swiper-animate-effect="shake" swiper-animate-duration="1s" swiper-animate-delay="0.6s">
+            <img src="./images/g5_text.png" alt="" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+            <img src="./images/g5_0.png" alt="" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.6s">
+            <img src="./images/g5_feiji.png" alt="" class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.7s">
+        </div>
+        <div class="swiper-slide p6">
+            <img src="./images/g6_title.png" alt="" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0">
+            <img src="./images/g6_text1.png" alt="" class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0">
+            <img src="./images/g6_share.png" alt="" class="ani" swiper-animate-effect="shake" swiper-animate-duration="1s" swiper-animate-delay="0.4s">
+        </div>
+    </div>
+</div>
+<script>
+    $(function(){
+        var mySwiper = new Swiper ('.swiper-container', {
+            direction: 'vertical',
+            mousewheelControl : true,
+            onInit: function(swiper){
+                swiperAnimateCache(swiper);
+                swiperAnimate(swiper);
+            },
+            onSlideChangeEnd: function(swiper){
+                swiperAnimate(swiper);
+            }
+        })
+    })
+</script>
+</body>
+</html>
